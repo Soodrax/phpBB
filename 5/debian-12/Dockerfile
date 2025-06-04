@@ -80,5 +80,6 @@ ENV APACHE_HTTPS_PORT_NUMBER="" \
 
 EXPOSE 8080 8443
 
+USER 1001
 ENTRYPOINT [ "/opt/bitnami/scripts/phpbb/entrypoint.sh" ]
 CMD [ "/opt/bitnami/scripts/apache/run.sh" ]
