@@ -37,11 +37,11 @@ RUN apt-get update && \
 # 2) Download & unpack the Bitnami components & phpBB application
 RUN mkdir -p /tmp/bitnami/pkg/cache/ ; cd /tmp/bitnami/pkg/cache/ || exit 1 ; \
     COMPONENTS=( \
-      "render-template-1.0.7-16-linux-${OS_ARCH}-debian-12" \
-      "php-8.3.21-4-linux-${OS_ARCH}-debian-12" \
+      "render-template-1.0.8-0-linux-${OS_ARCH}-debian-12" \
+      "php-8.3.22-4-linux-${OS_ARCH}-debian-12" \
       "apache-2.4.63-5-linux-${OS_ARCH}-debian-12" \
       "mysql-client-11.4.7-0-linux-${OS_ARCH}-debian-12" \
-      "libphp-8.3.21-1-linux-${OS_ARCH}-debian-12" \
+      "libphp-8.3.22-0-linux-${OS_ARCH}-debian-12" \
     ) ; \
     for COMPONENT in "${COMPONENTS[@]}"; do \
       if [ ! -f "${COMPONENT}.tar.gz" ]; then \
